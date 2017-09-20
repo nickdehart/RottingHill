@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B28C2F491F1D2FBB00307603 /* Tank.m in Sources */ = {isa = PBXBuildFile; fileRef = B28C2F481F1D2FBB00307603 /* Tank.m */; };
+		B28C2F4C1F1D334B00307603 /* TankEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B28C2F4B1F1D334B00307603 /* TankEngine.m */; };
+		B28C2F501F21789600307603 /* EnemyEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B28C2F4F1F21789600307603 /* EnemyEngine.m */; };
+		CD106DD11D42A71E0057609E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CD106DD01D42A71E0057609E /* libsqlite3.tbd */; };
+		CD106DD41D440B020057609E /* TitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CD106DD31D440B020057609E /* TitleScene.m */; };
+		CD2922ED1D45409400427A65 /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2922EC1D45409400427A65 /* GameOverScene.m */; };
+		CD40262E1D46CA0B00447402 /* Apple.m in Sources */ = {isa = PBXBuildFile; fileRef = CD40262D1D46CA0B00447402 /* Apple.m */; };
+		CD4385F51D39415D00335F78 /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4385F41D39415D00335F78 /* Tile.m */; };
+		CD4385F81D39437800335F78 /* TileEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4385F71D39437800335F78 /* TileEngine.m */; };
 		CD4486FC1D3715CD00996CDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4486FB1D3715CD00996CDA /* main.m */; };
 		CD4486FF1D3715CD00996CDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4486FE1D3715CD00996CDA /* AppDelegate.m */; };
 		CD4487021D3715CD00996CDA /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4487011D3715CD00996CDA /* GameScene.m */; };
@@ -17,6 +26,20 @@
 		CD44870F1D3715CD00996CDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD44870D1D3715CD00996CDA /* LaunchScreen.storyboard */; };
 		CD44871A1D3715CD00996CDA /* GameProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4487191D3715CD00996CDA /* GameProjectTests.m */; };
 		CD4487251D3715CE00996CDA /* GameProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4487241D3715CE00996CDA /* GameProjectUITests.m */; };
+		CD4487341D3716D200996CDA /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4487331D3716D200996CDA /* Player.m */; };
+		CD44873B1D37478900996CDA /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = CD44873A1D37478900996CDA /* Controller.m */; };
+		CD4512311D3C2732008623E8 /* Mob.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4512301D3C2732008623E8 /* Mob.m */; };
+		CD4512341D3C27D0008623E8 /* MobEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4512331D3C27D0008623E8 /* MobEngine.m */; };
+		CD58DB2F1D444BAB00FFD614 /* Hud.m in Sources */ = {isa = PBXBuildFile; fileRef = CD58DB2E1D444BAB00FFD614 /* Hud.m */; };
+		CD58DB321D44972500FFD614 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = CD58DB311D44972500FFD614 /* Database.m */; };
+		CD58DB351D44BCB500FFD614 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = CD58DB341D44BCB500FFD614 /* Score.m */; };
+		CD5B05E11D3D3969006AB42D /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5B05E01D3D3969006AB42D /* Bullet.m */; };
+		CD5B05E41D3D3DCB006AB42D /* BulletEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5B05E31D3D3DCB006AB42D /* BulletEngine.m */; };
+		CD64D6F41D46CBED00F8F6A1 /* AppleEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CD64D6F31D46CBED00F8F6A1 /* AppleEngine.m */; };
+		CD7398021D469A3A002090DA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7398011D469A3A002090DA /* AVFoundation.framework */; };
+		CD7398071D469EF5002090DA /* SoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7398061D469EF5002090DA /* SoundPlayer.m */; };
+		CDCF4E171D3B0A16008B0C9F /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCF4E161D3B0A16008B0C9F /* Cell.m */; };
+		CDCF4E191D3B0AA5008B0C9F /* Map.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCF4E181D3B0AA5008B0C9F /* Map.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +60,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B28C2F481F1D2FBB00307603 /* Tank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tank.m; sourceTree = "<group>"; };
+		B28C2F4A1F1D2FC700307603 /* Tank.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tank.h; sourceTree = "<group>"; };
+		B28C2F4B1F1D334B00307603 /* TankEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TankEngine.m; sourceTree = "<group>"; };
+		B28C2F4D1F1D335500307603 /* TankEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TankEngine.h; sourceTree = "<group>"; };
+		B28C2F4E1F21788A00307603 /* EnemyEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnemyEngine.h; sourceTree = "<group>"; };
+		B28C2F4F1F21789600307603 /* EnemyEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnemyEngine.m; sourceTree = "<group>"; };
+		CD106DD01D42A71E0057609E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		CD106DD21D440ADF0057609E /* TitleScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleScene.h; sourceTree = "<group>"; };
+		CD106DD31D440B020057609E /* TitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleScene.m; sourceTree = "<group>"; };
+		CD2922EB1D45407300427A65 /* GameOverScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
+		CD2922EC1D45409400427A65 /* GameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverScene.m; sourceTree = "<group>"; };
+		CD40262C1D46C9E600447402 /* Apple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Apple.h; sourceTree = "<group>"; };
+		CD40262D1D46CA0B00447402 /* Apple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Apple.m; sourceTree = "<group>"; };
+		CD4385F31D39410000335F78 /* Tile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		CD4385F41D39415D00335F78 /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
+		CD4385F61D3942CE00335F78 /* TileEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TileEngine.h; sourceTree = "<group>"; };
+		CD4385F71D39437800335F78 /* TileEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileEngine.m; sourceTree = "<group>"; };
 		CD4486F71D3715CD00996CDA /* GameProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4486FB1D3715CD00996CDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CD4486FD1D3715CD00996CDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,6 +96,33 @@
 		CD4487201D3715CE00996CDA /* GameProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4487241D3715CE00996CDA /* GameProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameProjectUITests.m; sourceTree = "<group>"; };
 		CD4487261D3715CE00996CDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD4487321D37168000996CDA /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		CD4487331D3716D200996CDA /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		CD4487391D37469300996CDA /* Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		CD44873A1D37478900996CDA /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
+		CD45122F1D3C2703008623E8 /* Mob.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mob.h; sourceTree = "<group>"; };
+		CD4512301D3C2732008623E8 /* Mob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mob.m; sourceTree = "<group>"; };
+		CD4512321D3C278B008623E8 /* MobEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobEngine.h; sourceTree = "<group>"; };
+		CD4512331D3C27D0008623E8 /* MobEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobEngine.m; sourceTree = "<group>"; };
+		CD58DB2D1D444AF800FFD614 /* Hud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hud.h; sourceTree = "<group>"; };
+		CD58DB2E1D444BAB00FFD614 /* Hud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hud.m; sourceTree = "<group>"; };
+		CD58DB301D44970900FFD614 /* Database.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		CD58DB311D44972500FFD614 /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
+		CD58DB331D44BC8A00FFD614 /* Score.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		CD58DB341D44BCB500FFD614 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		CD5B05DF1D3D3952006AB42D /* Bullet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
+		CD5B05E01D3D3969006AB42D /* Bullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bullet.m; sourceTree = "<group>"; };
+		CD5B05E21D3D3DBC006AB42D /* BulletEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BulletEngine.h; sourceTree = "<group>"; };
+		CD5B05E31D3D3DCB006AB42D /* BulletEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulletEngine.m; sourceTree = "<group>"; };
+		CD64D6F21D46CBD500F8F6A1 /* AppleEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleEngine.h; sourceTree = "<group>"; };
+		CD64D6F31D46CBED00F8F6A1 /* AppleEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleEngine.m; sourceTree = "<group>"; };
+		CD7398011D469A3A002090DA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CD7398051D469EAC002090DA /* SoundPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundPlayer.h; sourceTree = "<group>"; };
+		CD7398061D469EF5002090DA /* SoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundPlayer.m; sourceTree = "<group>"; };
+		CDCF4E141D3B082E008B0C9F /* Map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
+		CDCF4E151D3B09CE008B0C9F /* Cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		CDCF4E161D3B0A16008B0C9F /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cell.m; path = ../Cell.m; sourceTree = "<group>"; };
+		CDCF4E181D3B0AA5008B0C9F /* Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Map.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +130,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD7398021D469A3A002090DA /* AVFoundation.framework in Frameworks */,
+				CD106DD11D42A71E0057609E /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,8 +155,9 @@
 		CD4486EE1D3715CD00996CDA = {
 			isa = PBXGroup;
 			children = (
+				CD7398011D469A3A002090DA /* AVFoundation.framework */,
+				CD106DD01D42A71E0057609E /* libsqlite3.tbd */,
 				CD4486F91D3715CD00996CDA /* GameProject */,
-				CD4487181D3715CD00996CDA /* GameProjectTests */,
 				CD4487231D3715CE00996CDA /* GameProjectUITests */,
 				CD4486F81D3715CD00996CDA /* Products */,
 			);
@@ -106,17 +176,60 @@
 		CD4486F91D3715CD00996CDA /* GameProject */ = {
 			isa = PBXGroup;
 			children = (
-				CD4486FD1D3715CD00996CDA /* AppDelegate.h */,
-				CD4486FE1D3715CD00996CDA /* AppDelegate.m */,
-				CD4487001D3715CD00996CDA /* GameScene.h */,
-				CD4487011D3715CD00996CDA /* GameScene.m */,
-				CD4487031D3715CD00996CDA /* GameScene.sks */,
-				CD4487051D3715CD00996CDA /* GameViewController.h */,
-				CD4487061D3715CD00996CDA /* GameViewController.m */,
 				CD4487081D3715CD00996CDA /* Main.storyboard */,
 				CD44870B1D3715CD00996CDA /* Assets.xcassets */,
 				CD44870D1D3715CD00996CDA /* LaunchScreen.storyboard */,
+				CD4486FD1D3715CD00996CDA /* AppDelegate.h */,
+				CD4486FE1D3715CD00996CDA /* AppDelegate.m */,
+				CD4487051D3715CD00996CDA /* GameViewController.h */,
+				CD4487061D3715CD00996CDA /* GameViewController.m */,
+				CD106DD21D440ADF0057609E /* TitleScene.h */,
+				CD106DD31D440B020057609E /* TitleScene.m */,
+				CD4487001D3715CD00996CDA /* GameScene.h */,
+				CD4487011D3715CD00996CDA /* GameScene.m */,
+				CD2922EB1D45407300427A65 /* GameOverScene.h */,
+				CD2922EC1D45409400427A65 /* GameOverScene.m */,
+				CD58DB301D44970900FFD614 /* Database.h */,
+				CD58DB311D44972500FFD614 /* Database.m */,
+				CD7398051D469EAC002090DA /* SoundPlayer.h */,
+				CD7398061D469EF5002090DA /* SoundPlayer.m */,
+				CD58DB331D44BC8A00FFD614 /* Score.h */,
+				CD58DB341D44BCB500FFD614 /* Score.m */,
+				CD58DB2D1D444AF800FFD614 /* Hud.h */,
+				CD58DB2E1D444BAB00FFD614 /* Hud.m */,
+				CD4487321D37168000996CDA /* Player.h */,
+				CD4487331D3716D200996CDA /* Player.m */,
+				CD4487391D37469300996CDA /* Controller.h */,
+				CD44873A1D37478900996CDA /* Controller.m */,
+				CD4385F61D3942CE00335F78 /* TileEngine.h */,
+				CD4385F71D39437800335F78 /* TileEngine.m */,
+				CD4385F31D39410000335F78 /* Tile.h */,
+				CD4385F41D39415D00335F78 /* Tile.m */,
+				CDCF4E141D3B082E008B0C9F /* Map.h */,
+				CDCF4E181D3B0AA5008B0C9F /* Map.m */,
+				CDCF4E151D3B09CE008B0C9F /* Cell.h */,
+				CDCF4E161D3B0A16008B0C9F /* Cell.m */,
+				B28C2F4E1F21788A00307603 /* EnemyEngine.h */,
+				B28C2F4F1F21789600307603 /* EnemyEngine.m */,
+				CD4512321D3C278B008623E8 /* MobEngine.h */,
+				CD4512331D3C27D0008623E8 /* MobEngine.m */,
+				CD45122F1D3C2703008623E8 /* Mob.h */,
+				CD4512301D3C2732008623E8 /* Mob.m */,
+				B28C2F4D1F1D335500307603 /* TankEngine.h */,
+				B28C2F4B1F1D334B00307603 /* TankEngine.m */,
+				B28C2F4A1F1D2FC700307603 /* Tank.h */,
+				B28C2F481F1D2FBB00307603 /* Tank.m */,
+				CD5B05E21D3D3DBC006AB42D /* BulletEngine.h */,
+				CD5B05E31D3D3DCB006AB42D /* BulletEngine.m */,
+				CD5B05DF1D3D3952006AB42D /* Bullet.h */,
+				CD5B05E01D3D3969006AB42D /* Bullet.m */,
+				CD64D6F21D46CBD500F8F6A1 /* AppleEngine.h */,
+				CD64D6F31D46CBED00F8F6A1 /* AppleEngine.m */,
+				CD40262C1D46C9E600447402 /* Apple.h */,
+				CD40262D1D46CA0B00447402 /* Apple.m */,
+				CD4487031D3715CD00996CDA /* GameScene.sks */,
 				CD4487101D3715CD00996CDA /* Info.plist */,
+				CD4487181D3715CD00996CDA /* GameProjectTests */,
 				CD4486FA1D3715CD00996CDA /* Supporting Files */,
 			);
 			path = GameProject;
@@ -137,7 +250,7 @@
 				CD44871B1D3715CD00996CDA /* Info.plist */,
 			);
 			path = GameProjectTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		CD4487231D3715CE00996CDA /* GameProjectUITests */ = {
 			isa = PBXGroup;
@@ -210,11 +323,12 @@
 		CD4486EF1D3715CD00996CDA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "morris miller";
 				TargetAttributes = {
 					CD4486F61D3715CD00996CDA = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = HAW5PHT6WS;
 					};
 					CD4487141D3715CD00996CDA = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -279,10 +393,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD64D6F41D46CBED00F8F6A1 /* AppleEngine.m in Sources */,
+				CD40262E1D46CA0B00447402 /* Apple.m in Sources */,
+				CD106DD41D440B020057609E /* TitleScene.m in Sources */,
+				B28C2F4C1F1D334B00307603 /* TankEngine.m in Sources */,
+				CD58DB2F1D444BAB00FFD614 /* Hud.m in Sources */,
+				CDCF4E171D3B0A16008B0C9F /* Cell.m in Sources */,
 				CD4487071D3715CD00996CDA /* GameViewController.m in Sources */,
+				CD4512341D3C27D0008623E8 /* MobEngine.m in Sources */,
+				B28C2F491F1D2FBB00307603 /* Tank.m in Sources */,
+				CD4385F81D39437800335F78 /* TileEngine.m in Sources */,
+				CD58DB321D44972500FFD614 /* Database.m in Sources */,
+				CD4385F51D39415D00335F78 /* Tile.m in Sources */,
+				CD5B05E11D3D3969006AB42D /* Bullet.m in Sources */,
+				CD5B05E41D3D3DCB006AB42D /* BulletEngine.m in Sources */,
+				CD4512311D3C2732008623E8 /* Mob.m in Sources */,
 				CD4486FF1D3715CD00996CDA /* AppDelegate.m in Sources */,
+				CD58DB351D44BCB500FFD614 /* Score.m in Sources */,
+				CDCF4E191D3B0AA5008B0C9F /* Map.m in Sources */,
 				CD4487021D3715CD00996CDA /* GameScene.m in Sources */,
+				CD2922ED1D45409400427A65 /* GameOverScene.m in Sources */,
 				CD4486FC1D3715CD00996CDA /* main.m in Sources */,
+				CD44873B1D37478900996CDA /* Controller.m in Sources */,
+				CD7398071D469EF5002090DA /* SoundPlayer.m in Sources */,
+				CD4487341D3716D200996CDA /* Player.m in Sources */,
+				B28C2F501F21789600307603 /* EnemyEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,8 +485,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -394,8 +531,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -423,10 +562,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HAW5PHT6WS;
 				INFOPLIST_FILE = GameProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fsu.GameProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -434,10 +577,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HAW5PHT6WS;
 				INFOPLIST_FILE = GameProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fsu.GameProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -510,6 +657,7 @@
 				CD44872B1D3715CE00996CDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD44872C1D3715CE00996CDA /* Build configuration list for PBXNativeTarget "GameProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +666,7 @@
 				CD44872E1D3715CE00996CDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD44872F1D3715CE00996CDA /* Build configuration list for PBXNativeTarget "GameProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +675,7 @@
 				CD4487311D3715CE00996CDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

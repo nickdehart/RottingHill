@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class GameScene;
+@class Player;
+@class Controller;
+@class Button;
+@class Border;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

@@ -7,27 +7,81 @@
 //
 
 #import "GameViewController.h"
+#import "TitleScene.h"
 #import "GameScene.h"
 
 @implementation GameViewController
 
-- (void)viewDidLoad
+- (void)viewWillLayoutSubviews
 {
     [super viewDidLoad];
+    
+    // Create database and sound player instances
+    self.database = [[Database alloc]init];
+    self.soundPlayer = [[SoundPlayer alloc]init];
 
     // Configure the view.
     SKView * skView = (SKView *)self.view;
-    skView.showsFPS = YES;
-    skView.showsNodeCount = YES;
+    skView.showsFPS = NO;
+    skView.showsNodeCount = NO;
+    
     /* Sprite Kit applies additional optimizations to improve rendering performance */
     skView.ignoresSiblingOrder = YES;
     
-    // Create and configure the scene.
-    GameScene *scene = [GameScene nodeWithFileNamed:@"GameScene"];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
+    // Create scene instances
+    self.titleScene = [[TitleScene alloc]init];
+    self.titleScene.scaleMode = SKSceneScaleModeResizeFill;
+    self.titleScene.gameViewController = self;
     
-    // Present the scene.
-    [skView presentScene:scene];
+    // Start the title music and present the title scene
+    [self.soundPlayer playTitleMusic];
+    [skView presentScene: self.titleScene];
+}
+
+-(void) startGame {
+    [self.soundPlayer stopTitleMusic];
+    [self.soundPlayer playGameMusic];
+    
+    SKTransition *transition = [SKTransition flipVerticalWithDuration : 0.5];
+    SKView * skView = (SKView *)self.view;
+    
+    self.gameScene = [[GameScene alloc]init];
+    self.gameScene.scaleMode = SKSceneScaleModeResizeFill;
+    self.gameScene.gameViewController = self;
+    
+    [skView presentScene : self.gameScene transition : transition];
+}
+
+-(void) goToMenu {
+    [self.soundPlayer playTitleMusic];
+    
+    SKTransition *transition = [SKTransition flipVerticalWithDuration : 0.5];
+    SKView * skView = (SKView *)self.view;
+    
+    self.titleScene = [[TitleScene alloc]init];
+    self.titleScene.scaleMode = SKSceneScaleModeResizeFill;
+    self.titleScene.gameViewController = self;
+    
+    [skView presentScene : self.titleScene transition : transition];
+}
+
+-(void) goToGameOver {
+    [self.soundPlayer stopGameMusic];
+    int kills = self.gameScene.player.kills;
+    int level = self.gameScene.enemyEngine.level;
+    
+    SKTransition *transition = [SKTransition flipVerticalWithDuration : 0.5];
+    SKView * skView = (SKView *)self.view;
+    self.gameOverScene = [[GameOverScene alloc]init];
+    self.gameOverScene.scaleMode = SKSceneScaleModeResizeFill;
+    self.gameOverScene.gameViewController = self;
+    
+    [self.gameOverScene initializeScore : kills : level];
+    
+    [self.gameScene removeAllActions];
+    [self.gameScene removeAllChildren];
+    
+    [skView presentScene : self.gameOverScene transition : transition];
 }
 
 - (BOOL)shouldAutorotate
